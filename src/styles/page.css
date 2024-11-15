@@ -1,0 +1,79 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+}
+
+.hero-left-side {
+    display: flex;
+    justify-content: center;
+    max-width: 50%; /* Adjusting for responsive design */
+}
+
+.hero-right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 40px 40px 0px 40px;
+    box-shadow: 0px 0px 20px #180120;
+    background-color: rgb(5, 38, 53);
+    color: white;
+    max-width: 50%; /* Responsive max width */
+}
+
+.hero-right-side h1 {
+    font-family: cursive;
+}
+
+.hero-right-side p {
+    font-size: 20px;
+}
+
+@media (max-width: 1024px) {
+    .hero-section {
+        flex-direction: column;
+        height: auto;
+    }
+    .hero-left-side, .hero-right-side {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 680px) {
+    .hero-section {
+        flex-direction: column;
+        height: auto;
+    }
+    .hero-right-side {
+        padding: 15px;
+        max-width: 100%;
+    }
+    .hero-right-side p {
+        font-size: 16px;
+    }
+    .car-img  {
+        height: auto;
+        max-width: 100%; /* Fullwidth on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-right-side {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .hero-right-side h1 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,38 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.contact-links{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.icon{
+    border-radius: 50%;
+}
+
+.icon:hover{
+    box-shadow: 0px 0px 5px blue;
+}
+
+@media (max-width:  780px){
+    .footer{
+        flex-direction: column;
+    }
+    .footer p{
+      font-size: small;
+    }
+    .icon{
+        width: 20px;
+        height: auto;
+    }
+}
